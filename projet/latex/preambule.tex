@@ -1,0 +1,83 @@
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{soul}
+\usepackage{xifthen}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{float}
+
+% =======================================================
+
+\numberwithin{equation}{subsection}
+
+\titlespacing\section{0pt}{20pt}{0pt}
+\titlespacing\subsection{0pt}{20pt}{0pt}
+
+\renewcommand{\vec}[1]{\underline{#1}}
+
+\newcommand{\tenstwo}[1]{\underline{\underline{#1}}}
+\newcommand{\tp}{\kern 2pt {}^{T\!\!}}
+\newcommand{\roggt}{\underline{\text{rot}}}
+\newcommand{\set}[1]{\left\lbrace #1\right\rbrace}
+\newcommand{\norme}[1]{\left\Vert #1\right\Vert}
+
+\newcommand{\seminorme}[1]{| #1 |}
+
+\newcommand{\tendvers}{\xrightarrow[n \to \infty]{}}
+\newcommand{\sdots}{\makebox[1em][c]{.\hfil.\hfil.}}
+\newcommand{\et}{\text{ et }}
+
+\newcommand{\ouvert}{\Omega}
+\newcommand{\ferme}{{\overline\Omega}}
+\newcommand{\frontiere}{{\partial\Omega}}
+
+\newcommand{\ps}[2]{\left \langle #1,#2 \right \rangle}
+
+\renewcommand{\arraystretch}{1.5}
+
+\let\oldforall\forall
+\renewcommand{\forall}{\ \oldforall}
+
+\DeclareMathOperator{\tr}{trace}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\divv}{div}
+\DeclareMathOperator{\rot}{rot}
+
+\mathtoolsset{showonlyrefs}
+
+%\arraycolsep=15.4pt
+
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\renewcommand{\phi}{\varphi}
+%\renewcommand{\arraystretch}{1.5}
+
+\newcommand{\tenscont}{\tenstwo \sigma}
+
+\newcommand{\pr}[1][]{
+    \ifthenelse {\isempty{#1}}
+        {\frac{\partial}{\partial r}}
+        {\frac{\partial^#1}{\partial r^#1}}
+}
+
+\newcommand{\pt}[1][]{
+    \ifthenelse {\isempty{#1}}
+        {\frac{\partial}{\partial \theta}}
+        {\frac{\partial^#1}{\partial \theta^#1}}
+}
+
+\newcommand{\pz}[1][]{
+    \ifthenelse {\isempty{#1}}
+        {\frac{\partial}{\partial z}}
+        {\frac{\partial^#1}{\partial z^#1}}
+}

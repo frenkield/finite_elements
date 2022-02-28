@@ -1,0 +1,23 @@
+#Nombre de noeuds
+5
+
+#Coordonnees des noeuds
+2.77555756156e-17 2.77555756156e-17 0.0
+1.0 0.0 0.0
+0.0 1.0 0.0
+-1.0 0.0 0.0
+0.0 -1.0 0.0
+
+#Nombre de triangles
+4
+
+#Numeros des sommets de chaque triangle
+0 1 2
+0 2 3
+0 3 4
+0 4 1
+
+
+
+
+
